@@ -1195,7 +1195,7 @@ section,
 .services .service-item {
   background-color: var(--surface-color);
   box-shadow: 0px 5px 90px 0px rgba(0, 0, 0, 0.1);
-  padding: 50px 30px;
+  padding: 50px 15px;
   transition: all ease-in-out 0.4s;
   height: 100%;
 }
@@ -1205,7 +1205,7 @@ section,
 }
 
 .services .service-item .icon i {
-  color: var(--accent-color);
+  color: #3A63AB;
   font-size: 36px;
   transition: 0.3s;
 }
