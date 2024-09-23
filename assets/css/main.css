@@ -503,8 +503,56 @@ h6 {
 }
 
 /*--------------------------------------------------------------
-# Pop up
+# Pop up LGPD
 --------------------------------------------------------------*/
+
+.cookies-msg{
+  z-index: 3;
+  width: 100%;
+  background-color: #050834;
+  box-shadow: 10px 0 0 0 rgb(255, 255, 255);
+  position: fixed;
+  bottom: 0%;
+  left: 50%;
+  transform: translate(-50%);
+  
+}
+
+.cookies-sms{
+  color: #7CBBF2;
+}
+
+.cookies-msg .cookies-txt{
+  color: #fff;
+  letter-spacing: .5px;
+  display: flex;
+  align-items: center;
+  text-align: justify;
+  padding: 20px 50px;
+  
+}
+
+
+
+.cookies-msg .cookies-btn{
+  margin-left: 40px;
+}
+
+.cookies-msg .cookies-btn button{
+  background-color: #7CBBF2;
+  color: #fff;
+  border: 0;
+  font-weight: 700;
+  font-size: 14px;
+  margin: 0 0 20px 0;
+  padding: 5px 30px;
+  cursor: pointer; 
+  transition: .2s;
+}
+
+.cookies-msg .cookies-btn button:hover{
+  transform: scale(0.9);
+}
 
 /*--------------------------------------------------------------
 # Global Footer
