@@ -65,17 +65,37 @@
   <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
 <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
 
-<div class="cookies-msg" id="cookies-msg">
-  <div class="cookies-txt">
-    <p>Nós usamos cookies para melhorar sua experiência em nosso site, personalizar conteúdo e analisar o tráfego. Ao continuar navegando, você concorda com o uso de cookies.  <a href="assets/arq/POLÍTICA DE PRIVACIDADE - DB Software.pdf" download="POLÍTICA DE PRIVACIDADE - DB Software"
-      class="cookies-sms">  Saiba mais.</a></p>
+    <!-- cookies - popup -->
+    <div class="cookies-msg" id="cookies-msg">
+      <div class="cookies-txt">
+      <p>Nós usamos cookies para melhorar sua experiência em nosso site, personalizar conteúdo e analisar o tráfego. Ao continuar navegando, 
+      você concorda com o uso de cookies.  
+        <a href="assets/arq/POL%c3%8dTICA%20DE%20PRIVACIDADE%20-%20DB%20Software.pdf" download="POLÍTICA DE PRIVACIDADE - DB Software" 
+        class="cookies-sms">Saiba mais.</a>
+      </p>
 
-    <div class="cookies-btn">
-      <button onclick="aceito()">Aceito</button>
+      <div class="cookies-btn">
+        <button onclick="aceito()">Aceito</button>
+      </div>
+      </div>
     </div>
-  </div>
 
-</div>
+    <script>
+      function aceito() {
+        // Armazena um cookie que indica que o usuário aceitou os cookies
+        document.cookie = "cookiesAceitos=true; path=/; max-age=" + 60 * 60 * 24 * 30; // 30 dias
+        
+        // Oculta a mensagem de cookies
+        document.getElementById('cookies-msg').style.display = 'none';
+      }
+  
+      // Verifica se o cookie já foi aceito ao carregar a página
+      window.onload = function() {
+        if (document.cookie.split(';').some((item) => item.trim().startsWith('cookiesAceitos='))) {
+        document.getElementById('cookies-msg').style.display = 'none';
+        }
+      };
+    </script>
 
     <main class="main">
 
