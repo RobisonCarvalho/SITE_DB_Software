@@ -1316,14 +1316,50 @@ padding: 0 0 20px 0;
 .services .service-item {
   background-color: var(--surface-color);
   box-shadow: 0px 5px 90px 0px rgba(0, 0, 0, 0.1);
-  padding: 50px 15px;
+  padding: 10px;
+  margin: 0;
   transition: all ease-in-out 0.4s;
   height: 100%;
 }
 
+
+
 .services .service-item .icon {
-  margin-bottom: 10px;
+  width: 300px;
+  height: 200px;
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
 }
+
+.img-dow{
+  width: 100%;
+  height: 100%; 
+  object-fit: cover;
+}
+
+
+.btn-dl{
+  background-color: #050834;
+  font-style: normal;
+  font-weight: bold;
+  font-size: small;
+  padding: 10px 120px;
+  color: #ffffff;
+  border: none;
+  margin-top: 21px;
+}
+
+.dow-btn{
+  padding: 0 100%;
+  padding: 20px 0 20px 0;
+}
+
+.btn-dl:hover{
+  background-color: #7CBBF2;
+  color: #ffffff;
+}
+
 
 .services .service-item .icon i {
   color: #3A63AB;
@@ -1347,6 +1383,7 @@ padding: 0 0 20px 0;
   font-size: 14px;
   margin-bottom: 0;
 }
+
 
 .services .service-item:hover {
   transform: translateY(-10px);
